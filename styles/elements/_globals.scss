@@ -1,0 +1,126 @@
+body {  
+	@include gradient(#fff, #ddd);
+	border-top: 5px solid $dark-blue;
+	min-height: 550px;
+}
+#wrapper { 
+	width: 100%; 
+	max-width: percentage(960px / 1275px); 
+	margin: 20px auto 7px; 
+}
+#social{
+	width: 20%;
+	position: absolute;
+	right: 7%;
+	top: 0%;
+
+	.content{
+		display: none;
+		background: $dark-blue;
+		height: 250px;	
+		overflow: hidden;
+		position: relative;
+		z-index: 9999;
+
+		#search {
+			width: 75%;
+			position: absolute;
+			left: 11%;
+			top: 7%;
+
+			p {
+				width: 100%;
+
+				input {
+					padding: 7px 2%;
+					border: 1px solid #000;
+					font-size: 10pt;
+				}
+				#s {
+					width: 63%;
+				}
+				#submit {
+					color: #fff;
+					width: 27%;
+					background: $light-blue;
+
+					&:hover {
+						background: darken($light-blue, 10%);
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		#social-sprite{
+			position: absolute;
+			left: 11.5%;
+			width: 100%;
+			bottom: 5%;
+
+			li {
+				float: left;
+				margin-right: 4%;
+				a {
+					color: #fff;
+					display: block;
+					height: 50px;
+					overflow: hidden;
+					text-indent: -9999px;
+				}
+				&.twitter a{
+					@include img($img-path + 'social_sprite.png', 0);
+					width: 48px;
+					background-position: 0 0;
+				}
+				&.facebook a{
+					@include img($img-path + 'social_sprite.png', 0);
+					background-position: -54px 0;
+					width: 23px;
+				}
+				&.gp a{
+					@include img($img-path + 'social_sprite.png', 0);
+					background-position: -76px 0;
+					width: 50px;
+				}
+			}
+		}
+	}
+	.trigger{
+		color: #fff;
+		background: $dark-blue;
+		height: 40px;
+		display: block;
+		width: 150px;
+		font-weight: bold;
+		text-align: center;
+		float: right;
+		line-height: 2.5;
+		z-index: 1000;
+		position: relative;
+	}
+}
+#body, #blog, #sidebar {
+	padding: 23px 10px;
+	box-sizing: border-box;
+}
+#sidebar {
+	width: 24%;
+	min-height: 400px;
+	float: right;
+	background: #fff;
+	border-radius: 0 7px 7px 0;
+	@import 'elements/search';
+}
+#navigation-footer {
+	display: block;
+	margin: 0 auto 40px;
+	width: 50%;
+	
+	li {
+		float: left;
+		margin: 0 2% 0 0;
+		a {
+			color: $light-blue;
+		}
+	}
+}

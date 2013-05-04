@@ -1,0 +1,71 @@
+.home {
+	
+	#hero{
+		height: 300px;
+		overflow: hidden;
+		margin: 0 0 5px 0;
+		position: relative;
+	}
+}
+#wrapper-home {
+	width: 100%;
+	margin: 0 auto;
+
+	#product-info{
+		width: 100%;
+
+		li {
+			float: left;
+			width: 21.25%;
+			margin: 5px 5% 20% 0;
+
+			&:last-child{
+				margin-right: 0;
+			}
+
+			h4 {
+				@include thin-font-headline(17pt, $dark-blue);
+				font-weight: bold;
+			}
+
+			img { 
+				margin: 5px auto;
+				height: 125px;
+				width: 100%;
+				background-color: #000;
+			}
+			p {
+				margin: 0 0 5px 0;
+			}
+			.blue-cta {
+				position: relative;
+				@include gradient($light-blue, lighten($dark-blue, 20%));
+				color: #fff;
+				font-weight: bold;
+				font-size: 11pt;
+				padding: 7px 5%;
+				display: block;
+				border-radius: 12px;
+				box-shadow: 0px 2px 2px #333;
+				border: 1px solid #3789D8;
+				border-top: 1px solid lighten(#002651, 20%);
+
+				span {
+					display: block;
+					width: 12px;
+					background: #FFF;
+					position: absolute;
+					right: 10px;
+					top: 20%;
+					color: #000;
+					border-radius: 10px;
+					padding: 3px 1px 1px 4px;
+					text-align: center;
+					font-size: 8pt;
+					font-weight: normal;
+					border: 1px solid $dark-blue;
+				}
+			}
+		}
+	}
+}

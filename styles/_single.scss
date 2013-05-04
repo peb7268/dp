@@ -1,0 +1,37 @@
+#wrapper-single, #wrapper-page, #wrapper-blog{
+	width: 75%;
+	float: left;
+	margin-right: 5px;
+
+	#body, #blog {
+		background: #fff;
+		min-height: 400px;
+		border-radius: 0 0 0px 7px;
+		
+		#single-header, #blog-header{
+			h1#title {
+				@include thin-font-headline(24pt, $base-global-text-color);
+				margin: 0 0 5px 0;
+			}
+			#banner {
+
+				img {
+					max-width: 100%;
+				}
+			}
+			@import 'elements/meta'
+		}
+
+		p {
+			margin: 0 auto 15px;
+		}
+
+		.content {
+			width: 95%;
+			margin: 0 0 0 0;
+		}
+	}
+}
+#wrapper-single {
+	padding: 0;
+}
