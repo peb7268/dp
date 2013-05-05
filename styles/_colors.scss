@@ -1,11 +1,15 @@
 $base-global-text-color: #333;
 
+$lightest-blue: #2ba4f8;
 $light-blue: #3789d8;
 //$dark-blue: #0c4a7f;
 $dark-blue: #002651;
+$darker-blue: #0769ad;
 
 $button-color: lighten($light-blue, 15%);
 $light-button: lighten($dark-blue, 20%);
+
+$green: #6bb130;
 
 $hero-left-top: #797979;
 $hero-left-bottom: #424242;

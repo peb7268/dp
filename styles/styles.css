@@ -218,41 +218,63 @@ header {
     width: 100%; }
     #wrapper-home #product-info li {
       float: left;
-      width: 21.25%;
-      margin: 5px 5% 20% 0; }
+      width: 24.47%;
+      margin: 5px 6px 20% 0; }
       #wrapper-home #product-info li:last-child {
         margin-right: 0; }
       #wrapper-home #product-info li h4 {
         color: #002651;
-        font-size: 17pt;
+        font-size: 16pt;
         font-family: 'Open Sans Condensed', sans-serif;
-        font-weight: bold; }
+        font-weight: bold;
+        padding: 8px 7px;
+        margin-bottom: 5px; }
+      #wrapper-home #product-info li:nth-child(1) h4 {
+        color: #fff;
+        background: #043b86; }
+      #wrapper-home #product-info li:nth-child(2) h4 {
+        color: #fff;
+        background: #0660b7; }
+      #wrapper-home #product-info li:nth-child(3) h4 {
+        color: #fff;
+        background: #2ba4f8; }
+      #wrapper-home #product-info li:nth-child(4) h4.signup {
+        color: #fff;
+        background: #6bb130; }
+      #wrapper-home #product-info li:nth-child(4) h4.news {
+        color: #fff;
+        background: #333; }
+      #wrapper-home #product-info li:nth-child(4) #news_posts {
+        width: 100%; }
+        #wrapper-home #product-info li:nth-child(4) #news_posts li {
+          float: none;
+          width: 100%;
+          margin: 0 0 6px 20px;
+          color: #002651;
+          list-style: square; }
+          #wrapper-home #product-info li:nth-child(4) #news_posts li a {
+            color: #002651;
+            font-size: 10pt;
+            display: block; }
       #wrapper-home #product-info li img {
-        margin: 5px auto;
+        margin: 0 auto 5px;
         height: 125px;
         width: 100%;
         background-color: #000; }
       #wrapper-home #product-info li p {
-        margin: 0 0 5px 0; }
+        font-size: 10pt;
+        margin: 0 0 10px 0; }
       #wrapper-home #product-info li .blue-cta {
         position: relative;
-        background-color: #3789d8;
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#3789d8), to(#0056b7));
-        background-image: -webkit-linear-gradient(top, #3789d8, #0056b7);
-        background-image: -moz-linear-gradient(top, #3789d8, #0056b7);
-        background-image: -o-linear-gradient(top, #3789d8, #0056b7);
-        background-image: -ms-linear-gradient(top, #3789d8, #0056b7);
-        background-image: linear-gradient(top, #3789d8, #0056b7);
-        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='$top-color', EndColorStr='$bottom-color');
-        color: #fff;
-        font-weight: bold;
-        font-size: 11pt;
+        background: #0660b7;
+        border: 1px solid #002651;
+        border-bottom: 1px solid black;
+        color: #FFF;
+        font-size: 8pt;
         padding: 7px 5%;
         display: block;
-        border-radius: 12px;
-        box-shadow: 0px 2px 2px #333;
-        border: 1px solid #3789D8;
-        border-top: 1px solid #0056b7; }
+        border-radius: 0px;
+        font-weight: bold; }
         #wrapper-home #product-info li .blue-cta span {
           display: block;
           width: 12px;
@@ -267,6 +289,32 @@ header {
           font-size: 8pt;
           font-weight: normal;
           border: 1px solid #002651; }
+        #wrapper-home #product-info li .blue-cta:hover {
+          background-color: #3789d8;
+          background-image: -webkit-gradient(linear, left top, left bottom, from(#3789d8), to(#003e84));
+          background-image: -webkit-linear-gradient(top, #3789d8, #003e84);
+          background-image: -moz-linear-gradient(top, #3789d8, #003e84);
+          background-image: -o-linear-gradient(top, #3789d8, #003e84);
+          background-image: -ms-linear-gradient(top, #3789d8, #003e84);
+          background-image: linear-gradient(top, #3789d8, #003e84);
+          filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='$top-color', EndColorStr='$bottom-color');
+          box-shadow: 0px 0px 4px #999; }
+      #wrapper-home #product-info li #newsletter {
+        margin: 0 0 5px 0; }
+        #wrapper-home #product-info li #newsletter input {
+          border: 1px solid transparent;
+          padding: 4px;
+          float: left;
+          display: block;
+          font-size: 11pt; }
+        #wrapper-home #product-info li #newsletter #email {
+          width: 73%;
+          margin-right: 2%;
+          border: 1px solid #538925; }
+        #wrapper-home #product-info li #newsletter #submit {
+          background: #538925;
+          color: #6bb130;
+          width: 20%; }
 
 #wrapper-single, #wrapper-page, #wrapper-blog {
   width: 75%;
