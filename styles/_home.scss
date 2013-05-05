@@ -106,23 +106,18 @@
 				font-weight: bold;
 
 				span {
+					color: $lightest-blue;
 					display: block;
 					width: 12px;
-					background: #FFF;
 					position: absolute;
 					right: 10px;
-					top: 20%;
-					color: #000;
-					border-radius: 10px;
-					padding: 3px 1px 1px 4px;
-					text-align: center;
-					font-size: 8pt;
+					top: 21%;
+					font-size: 11pt;
 					font-weight: normal;
-					border: 1px solid $dark-blue;
 				}
 
 				&:hover {
-					@include gradient($light-blue, lighten($dark-blue, 10%));
+					background: darken(adjust-hue($lightest-blue, 5%), 30%);
 					box-shadow: 0px 0px 4px #999;
 				}
 			}

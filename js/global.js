@@ -38,7 +38,7 @@
 			$('#social .content').slideToggle(200);
 		});
 	
-		$('#menu-primary-navigation').hover(function(evt){
+		$('#menu-primary-navigation li').hover(function(evt){
 			evt.preventDefault();
 			$(this).find('ul.sub-menu').slideDown(200);
 		}, function(){
