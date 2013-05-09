@@ -3,6 +3,7 @@ define('THEME_DIR', get_template_directory_uri());
 define('CSS_DIR', THEME_DIR.'/styles');	
 define('JS_DIR', THEME_DIR.'/js');	
 define('IMG_DIR', THEME_DIR.'/img');
+define('VIDEOS_DIR', THEME_DIR.'/videos');
 define('SLIDESHOW_DIR', IMG_DIR.'/slideshow');
 
 function initTheme()
@@ -16,12 +17,13 @@ function removeDefaults()
 }
 function registerScripts()
 {
-	wp_register_script('home', JS_DIR.'/home.js', array(), false, false);
+	wp_register_script('fancybox', JS_DIR.'/fancybox/source/jquery.fancybox.js', array(), false, false);
+	wp_register_script('home', JS_DIR.'/home.js', array('fancybox'), false, true);
 	wp_register_script('global', JS_DIR.'/global.js', array(), false, true);
 	wp_register_script('nivo', JS_DIR.'/nivo-slider/jquery.nivo.slider.pack.js', array(), false, false);
-
 	//wp_register_style( $handle, $src, $deps = array, $ver = false, $media = 'all' )
 	wp_register_style('nivo', JS_DIR.'/nivo-slider/nivo-slider.css', array(), false, 'all');
+	wp_register_style('fancybox', JS_DIR.'/fancybox/source/jquery.fancybox.css', array(), false, 'all');
 }
 function enqueueScripts()
 {
@@ -31,7 +33,10 @@ function enqueueScripts()
 	if(is_page('home') || is_front_page()){
 		wp_enqueue_script('home');
 		wp_enqueue_script('nivo');
+		wp_enqueue_script('fancybox');
+
 		wp_enqueue_style('nivo');
+		wp_enqueue_style('fancybox');
 	}
 }
 function setupTheme()

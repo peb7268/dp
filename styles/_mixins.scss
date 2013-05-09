@@ -5,7 +5,11 @@
 	font-size: $font-size;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
-
+@mixin logo-font-headline($font-size, $color){
+	color: $color;
+	font-size: $font-size;
+	font-family: 'Anton', sans-serif;
+}
 //Utilities
 @mixin img($img-name, $bp){
 	background-image: url($img-path + $img-name);
